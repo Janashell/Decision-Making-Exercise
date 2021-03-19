@@ -1,26 +1,75 @@
 // 1a
-let randomNum = Math.random();
-randomNum *= 5;
-randomNum = Math.floor(randomNum);
-randomNum ++;
+let randomNum = Math.floor(Math.random() * 5) + 1;
 console.log(randomNum);
 
-
 // 1b
-
-if (true) {
+if (randomNum >= 4) {
+    // if (randomNum > 3) {
     console.log("Greater than or equal to 4");
- else if (true){
-    console.log("Equal to 2 or 3");
-}
+    }else if (randomNum >=2) {
+// } else if (randomNum > 1 ) {
+console.log("Equal to 2 or 3");
+} else {
+    console.log("Equal to 1");
 }
 
 // 1c
+if (randomNum != 3) {
+    // if (randomNumber !== 3) {
+    console.log("Not equal to 3");
+}
+
+// 1d
+// if (randomNum !== 3 || randomNum !== 5){ Not a valid answer
+if (randomNum !==(3 && 5)) {
+// if (randomNum !== 3 && randomNum !== 5) {
+    console.log("Not equal to 3 AND not equal to 5");
+}
+
+// 1e
+if (randomNum === (2 || 4)) {
+// if (randomNum === 2 || randomNum === 4) {
+    console.log("Equal to 2 OR equal to 4");
+}
+
+// BONUS
+// 2
+// Ternaries are good to use in place of a simple IF ELSE statement
+randomNum >= 4 ? console.log("Greater than or equal to 4") : console.log("Less than 4");
+
+// Same as ternary above
+// if (randomNum >+ 4) {
+    // console.log("Greater than or equal to 4")
+    // }else{
+        // console.log("Less than 4")
+    // }
+
+// Also the valuable can be set to a variable
+console.log(randomNumber);
+// 3
+// Switch statement takes in a parameter and returns something based on the case (Or the match) that the parameter goes with
+switch (randomNum) {
+    case 1;
+        console.log("One");
+    break;
+    case 2;
+        console.log("Two");
+    break;
+    case 3;
+        console.log("Three");
+    break;
+    case 4;
+        console.log("Four");
+    break;
+    default:
+        console.log("Five");
+
+
+}
 
 
 
 
-// I'm sorry Matt, but I have sat here and messed with these first few problems for almost two hours and can not figure them out. I usually try to study and go over things during the weekend, but really didnt have a chance to this weekend due to working on my portfolio. I will definatly do that this week and do my best to understand all this better.  I just didn't want you thinking that I didn't try.  
 
 
 
